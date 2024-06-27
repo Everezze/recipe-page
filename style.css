@@ -1,0 +1,93 @@
+:root{
+	--nutmeg: hsl(14, 45%, 36%);
+	--dark-raspberry: hsl(332, 51%, 32%);
+
+	--white: hsl(0, 0%, 100%);
+	--rose-white: hsl(330, 100%, 98%);
+	--eggshell: hsl(30, 54%, 90%);
+	--light-grey: hsl(30, 18%, 87%);
+	--wenge-brown: hsl(30, 10%, 34%);
+	--dark-charcoal: hsl(24, 5%, 18%);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: "Outfit",sans-serif;
+	background: var(--eggshell);
+}
+
+main{
+	background: var(--white);
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+h1,h2,h3,h4,p{
+	margin:0;
+}
+
+h1,h2{
+	font-family: "Young Serif";
+}
+
+h1{
+	font-size: 2.35rem;
+}
+
+h2{
+	color: var(--nutmeg);
+}
+
+h3{
+	color: var(--dark-raspberry);
+}
+
+img{
+	width: 100%;
+	vertical-align: bottom;
+}
+
+ul,ol{
+	padding: 0 0 0 15px;
+	margin: 0;
+}
+
+li{
+	padding-left: 1rem;
+}
+
+section+section{
+	border-top: 1px solid black;
+}
+
+.prep-time{
+	background: var(--rose-white);
+}
+
+.table > div{
+	display: flex;
+}
+
+.table>div>*{
+	width: 50%;
+}
+
+@media screen and (min-width: 700px) {
+	body{
+		padding: 5rem 0;
+	}
+
+	main{
+		padding: 2.25rem;
+		border-radius: 1rem;
+	}
+
+	.omelette-pic{
+		overflow: hidden;
+		border-radius: 1rem;
+	}
+}

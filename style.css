@@ -18,6 +18,7 @@ body{
 	margin: 0;
 	font-family: "Outfit",sans-serif;
 	background: var(--eggshell);
+	color: var(--wenge-brown);
 }
 
 main{
@@ -35,15 +36,26 @@ h1,h2{
 }
 
 h1{
-	font-size: 2.35rem;
+	font-size: 2.1rem;
+	margin: 2rem 0 0;
+	color: var(--dark-charcoal);
 }
 
 h2{
+	margin-bottom: 1rem;
+}
+
+h2,.table>div b{
 	color: var(--nutmeg);
 }
 
 h3{
 	color: var(--dark-raspberry);
+	margin-bottom: 1rem;
+}
+
+h4{
+	font-weight: normal;
 }
 
 img{
@@ -52,28 +64,67 @@ img{
 }
 
 ul,ol{
-	padding: 0 0 0 15px;
+	padding: 0 0 0 20px;
 	margin: 0;
+}
+
+ol{
+	padding: 0 0 0 25px;
 }
 
 li{
 	padding-left: 1rem;
 }
 
+li+li{
+	margin-top: 1rem;
+}
+
+li::marker{
+	color: var(--nutmeg);
+	font-weight: bold;
+}
+
+section{
+	padding: 1.5rem 0 2rem;
+}
 section+section{
-	border-top: 1px solid black;
+	border-top: 1px solid var(--light-grey);
+}
+
+p{
+	margin: 1rem 0 1.75rem;
 }
 
 .prep-time{
 	background: var(--rose-white);
+	padding: 1.5rem;
+	border-radius: .75rem;
+}
+
+.prep-time li::marker{
+	color: var(--dark-raspberry);
 }
 
 .table > div{
 	display: flex;
+	padding: 1rem 0 1rem 2rem;
+}
+
+.table > div+div{
+	border-top: 1px solid var(--light-grey);
 }
 
 .table>div>*{
 	width: 50%;
+}
+
+.nutrition p{
+	margin-bottom: 1rem;
+}
+
+.recipe-container{
+	padding: 0 2rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -82,12 +133,20 @@ section+section{
 	}
 
 	main{
-		padding: 2.25rem;
+		padding: 2.25rem 2.25rem 0;
 		border-radius: 1rem;
 	}
 
 	.omelette-pic{
 		overflow: hidden;
 		border-radius: 1rem;
+	}
+
+	.recipe-container{
+		padding: 0;
+	}
+
+	h1{
+		font-size: 2.35rem;
 	}
 }
